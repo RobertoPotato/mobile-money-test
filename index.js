@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/cb", (req, res) => {
-  console.log(req.body.body);
+  //console.log(req.body.body);
   res.status(200).send("hit the mpesa info endpoint");
 });
 
