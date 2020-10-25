@@ -8,7 +8,7 @@ app.post("/", (req, res) => {
 
 app.post("/cb", (req, res) => {
   console.log("callback Endpoint has been hit");
-  //console.log(req.body.Body);
+  console.log(req.body.Body);
   res.status(200).send("OK");
 });
 
