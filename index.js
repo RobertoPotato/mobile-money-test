@@ -7,8 +7,9 @@ app.post("/", (req, res) => {
 });
 
 app.post("/cb", (req, res) => {
-  //console.log(req.body.body);
-  res.status(200).send("hit the mpesa info endpoint");
+  console.log("callback Endpoint has been hit");
+  //console.log(req.body.Body);
+  res.status(200).send("OK");
 });
 
 app.listen(3001, () => {
