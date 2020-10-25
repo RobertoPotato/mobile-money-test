@@ -1,12 +1,12 @@
 const express = require("express");
-
 const app = express();
+app.use(express.json());
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   res.status(200).send({ message: "Hello World" });
 });
 
-app.get("/cb", (req, res) => {
+app.post("/cb", (req, res) => {
   //console.log(req.body.body);
   res.status(200).send("hit the mpesa info endpoint");
 });
