@@ -6,8 +6,9 @@ app.get("/", (req, res) => {
   res.status(200).send({ message: "Hello World" });
 });
 
-app.get("/mPesaCBInfo", (req, res) => {
+app.get("/cb", (req, res) => {
   console.log(req.body.body);
+  res.status(200).send("hit the mpesa info endpoint");
 });
 
 app.listen(3001, () => {
