@@ -42,7 +42,7 @@ app.post("/cb", (req, res) => {
   console.log("callback Endpoint has been hit");
   console.log(req.body.Body);
 
-  var data = req.body.Body;
+  var data = req.body.Body.stkCallback.CallbackMetadata.Item;
 
   fs.writeFile("mpesaCB.txt", util.inspect(data), (err) => {
     if (err) return console.log(err);
